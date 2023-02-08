@@ -2,17 +2,61 @@
 <html>
 
     <head>
-        <title>My Profile</title>
-		<link rel="stylesheet" href="style.css">
+        <title>My Profile2</title>
+		<style>
+		*{
+		  
+		  background-color:blue;
+		  
+		}
+		.profile11{
+		width: fit-content;
+	margin: 150px auto;
+	display: flex;
+		}
+		.profile11 img{
+	width:320px;
+	cursor:pointer;
+	border-radius:10px;
+	position:relative;
+	z-index:100;
+	box-shadow:10px 10px 10px rgba(0,0,0,0.3);
+	
+}
+.profile22{
+	padding: 10px 50px;
+	
+}
+.profile22 h1{
+	font-size:80px;
+	font-weight:500px;
+}
+
+.profile22 p{
+	line-height:26px;
+}
+
+		
+		</style>
+		
     </head>
     <body>
-<div class="profile1">
-<img src="img.jpg">
-<div class="profile2">
+<div class="profile11">
+<img src="img1.jpg">
+<div class="profile22">
     <h1>Mncedisi Mahlangu</h1>
     <p>Patient student with learning programming</p>
     <p>Studied at: Tshwane University of technology</p>
     <p>Course: Information technology</p>
+	<button type="button" id="btn" onclick="sampleClick()">Click Here to find out more!</button>
+	<script>
+	
+	function sampleClick() {
+	var btnx= document.getElementById("btn");
+	btnx.disabled = true;
+	
+	}
+	</script>
 </div>
 </div>
 
